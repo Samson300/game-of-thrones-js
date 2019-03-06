@@ -4,7 +4,6 @@ console.log(`There are ${characters.length} characters in the array.`);
 let namesA = characters.filter(val => {
     return val.name[0] === "A";
 })
-
 console.log("Character names that start with letter A");
 console.log(namesA);
 
@@ -13,18 +12,16 @@ console.log(namesA);
 let namesZ = characters.filter(val => {
     return val.name[0] === "Z";
 })
-
 console.log("Character names that start with letter Z");
 console.log(namesZ);
 
 
 // How many characters are dead?
 let deadCharacters = characters.filter(val => {
-    return val.died != ""
+    return val.died != "";
 })
-
-console.log("Characters that are dead")
-console.log(deadCharacters)
+console.log("Characters that are dead");
+console.log(deadCharacters);
 
 
 
@@ -48,22 +45,27 @@ console.log(cultureValyrian);
 let actorHotPie = characters.filter(val => {
     return val.name === "Hot Pie";
 })
+console.log("Actor who plays Hot Pie");
 console.log(actorHotPie);
 
 
 
-// How many characters are *not* in the tv show?#
+// How many characters are *not* in the tv show?
 let notInShow = characters.filter(val => {
     return val.tvSeries[0] === "";
 })
+console.log("Characters not in the Show");
 console.log(notInShow);
 
 
 
-// Produce a list characters with the last name "Targaryen"#
+// Produce a list characters with the last name "Targaryen"
 let lastNameTargaryen = characters.filter(val => {
-    return ;
+    let check = val.name.split(' ');
+    return check[1] === "Targaryen";
 })
+console.log("Characters with the last name Targaryen");
+console.log(lastNameTargaryen);
 
 
 
@@ -71,3 +73,5 @@ let lastNameTargaryen = characters.filter(val => {
 let histogram = characters.filter(val => {
     return ;
 })
+console.log("Histogram of the houses");
+console.log(histogram);
