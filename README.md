@@ -1,2 +1,2 @@
 # game-of-thrones-js
-Multipule JavaScript execises filering data from an API
+Pulling data from an API with JavaScript using sort, filter and split
